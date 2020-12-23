@@ -16,6 +16,9 @@
     <!-- animation css  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- typed js  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
     <title>About</title>
     <style>
       body {
@@ -177,12 +180,23 @@
     </div>
 
     <!-- see you next time  -->
-    <h4
-      class="text-light fw-bolder FS-1 d-flex justify-content-center"
-      data-aos="zoom-in"
+    <div
+      id="typed-strings"
+      class="fs-1 fw-bold text-light d-flex justify-content-center"
     >
-      THANK YOU !
-    </h4>
+      <h1>
+        <span id="typed" style="font-family: 'Langar', cursive"></span>
+      </h1>
+    </div>
+
+    <script>
+      var type = new Typed("#typed", {
+        strings: ["HOPE YOU GUYS ENJOYED...", "THANK YOU !"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
 
     <hr
       style="height: 1px; border: none; color: white; background-color: white"
